@@ -11,8 +11,14 @@ const Navbar = () => {
     const handleScroll = () => {
       setScroll(window.scrollY > 50);
 
-      // Update active section based on scroll position
-      const sections = ["home", "about", "skills", "experience", "contact"];
+      const sections = [
+        "home",
+        "about",
+        "skills",
+        "experience",
+        "education",
+        "contact",
+      ];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -41,6 +47,7 @@ const Navbar = () => {
     { name: "About", href: "#about" },
     { name: "Skills", href: "#skills" },
     { name: "Experience", href: "#experience" },
+    { name: "Education", href: "#education" },
     { name: "Contact", href: "#contact" },
   ];
 

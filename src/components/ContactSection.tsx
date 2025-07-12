@@ -8,14 +8,27 @@ const ContactSection = () => {
     e.preventDefault();
     const formData = new FormData(e.target);
 
+    // Append Web3Forms access key
+    formData.append("access_key", "5643292f-7f62-4b38-af31-66dfdb1fe1e8");
+
+    // Optional: from name (useful in email subject)
+    formData.append("from_name", "My Portfolio Contact");
+
     try {
-      const res = await fetch("/cv/ramez/contact.php", {
+      const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         body: formData,
       });
 
-      const text = await res.text();
-      alert(text);
+      const data = await res.json();
+
+      if (data.success) {
+        alert("Message sent successfully!");
+        e.target.reset();
+      } else {
+        console.error(data);
+        alert("Failed to send message.");
+      }
     } catch (error) {
       alert("Error sending message.");
     }
@@ -39,6 +52,7 @@ const ContactSection = () => {
           <Card className="overflow-hidden border-0 shadow-lg">
             <CardContent className="p-0">
               <div className="grid grid-cols-1 md:grid-cols-5">
+                {/* Contact Info */}
                 <div className="bg-gradient-to-br from-primary to-purple-500 text-white p-8 md:col-span-2">
                   <h3 className="text-2xl font-semibold mb-6">
                     Contact Information
@@ -86,11 +100,17 @@ const ContactSection = () => {
                   </div>
                 </div>
 
+                {/* Contact Form */}
                 <div className="p-8 md:col-span-3">
                   <h3 className="text-2xl font-semibold mb-6">
                     Send a Message
                   </h3>
                   <form onSubmit={handleSubmit}>
+                    <input
+                      type="hidden"
+                      name="from_name"
+                      value="My Portfolio Contact"
+                    />
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                       <div>
                         <label
@@ -103,6 +123,7 @@ const ContactSection = () => {
                           name="name"
                           type="text"
                           id="name"
+                          required
                           className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50"
                           placeholder="John Doe"
                         />
@@ -118,6 +139,7 @@ const ContactSection = () => {
                           name="email"
                           type="email"
                           id="email"
+                          required
                           className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50"
                           placeholder="john@example.com"
                         />
@@ -151,6 +173,7 @@ const ContactSection = () => {
                         name="message"
                         id="message"
                         rows={4}
+                        required
                         className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50"
                         placeholder="Write your message here..."
                       ></textarea>

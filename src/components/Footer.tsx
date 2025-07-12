@@ -5,16 +5,14 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gray-50 py-12">
+    <footer className="bg-gray-50 py-10">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col items-center">
-          <div className="mb-6">
-            <h3 className="text-2xl font-bold text-gradient font-display">
-              Mohammad Ramez
-            </h3>
-          </div>
+        <div className="flex flex-col items-center space-y-8 text-center">
+          <h3 className="text-2xl font-bold text-gradient font-display">
+            Mohammad Ramez
+          </h3>
 
-          <div className="flex items-center space-x-6 mb-8">
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
             <a
               href="#home"
               className="text-gray-600 hover:text-primary transition-colors"
@@ -40,6 +38,12 @@ const Footer = () => {
               Experience
             </a>
             <a
+              href="#education"
+              className="text-gray-600 hover:text-primary transition-colors"
+            >
+              Education
+            </a>
+            <a
               href="#contact"
               className="text-gray-600 hover:text-primary transition-colors"
             >
@@ -47,7 +51,7 @@ const Footer = () => {
             </a>
           </div>
 
-          <div className="flex items-center space-x-4 mb-8">
+          <div className="flex flex-wrap justify-center gap-4">
             <a
               href="https://github.com/MOHAADEV"
               target="_blank"
@@ -78,14 +82,15 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-full border border-gray-300 hover:border-primary hover:bg-primary/10 transition-colors"
+              aria-label="Instagram"
             >
               <Instagram className="w-5 h-5" />
             </a>
           </div>
 
-          <div className="text-gray-500 text-sm text-center">
-            <p>&copy; {currentYear} Mohammad Ramez. All rights reserved.</p>
-          </div>
+          <p className="text-gray-500 text-sm">
+            &copy; {currentYear} Mohammad Ramez. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
