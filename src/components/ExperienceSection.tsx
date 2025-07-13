@@ -3,32 +3,18 @@ import React from "react";
 const ExperienceSection = () => {
   const experiences = [
     {
-      title: "Student Counseling",
-      company: "Freelancer",
-      period: "2021 - 2023",
+      title: "Intern",
+      company: "Digital Skills21 Institution",
+      period: "2025",
       description:
-        "Assisted students in applying to Turkish universities, helping them secure admissions and providing necessary consultations throughout the process.",
+        "Developed a CMS-powered news platform with 100+ monthly visitors. Achieved 100% mobile responsiveness and improved content loading speed by 40%.",
     },
     {
-      title: "Volunteer Data Entry Clerk",
-      company: "Al Hadi Center",
-      period: "2023",
+      title: "Graduation Project",
+      company: "e-Kiralık",
+      period: "2025",
       description:
-        "In response to the earthquake in Turkey in February, I volunteered to provide emotional and material support to affected individuals, engaging in conversations to offer comfort and assistance during this challenging time.",
-    },
-    {
-      title: "Web Developer & SEO & Data Entry & Designer",
-      company: "Al Hilal Education",
-      period: "2023 - 2024",
-      description:
-        "Gained experience working with Al Hilal Education in web development, SEO, data entry, and design, collaborating with a team and managing projects effectively.",
-    },
-    {
-      title: "Web Developer",
-      company: "Solexad",
-      period: "2023 - 2024",
-      description:
-        "Worked as a web developer for a startup in Dubai, contributing to the development and enhancement of web applications.",
+        "Built a full-stack rental platform with e-contracts, reminders, and analytics using Next.js, Express.js, and Sanity. Reduced manual paperwork time by 70% and improved communication between tenants and landlords.",
     },
     {
       title: "Internship Student",
@@ -36,14 +22,49 @@ const ExperienceSection = () => {
         "ÇELEBİ KARDEŞLER MÜHENDİSLİK DANIŞMANLIK VE TİCARET LİMİTED ŞİRKETİ",
       period: "2024",
       description:
-        "Worked as a web developer intern, gaining hands-on experience in web development and contributing to various projects within the company.",
+        "Contributed to 3+ frontend/backend projects. Decreased bug count by 25% through code review and refactoring.",
     },
     {
-      title: "Designer",
-      company: "Freelancer",
-      period: "2024 - Present",
+      title: "Web Developer",
+      company: "Solexad, Dubai",
+      period: "2023 - 2024",
       description:
-        "Designed Instagram posts and managed multiple accounts for restaurants and other businesses, enhancing their online presence and engagement.",
+        "Improved website performance by 45% through frontend optimization and UI enhancements. Developed 4+ user-centric features that led to a 20% increase in session time.",
+    },
+    {
+      title: "Web Developer, SEO & Designer",
+      company: "Al Hilal Education",
+      period: "2023 - 2024",
+      description:
+        "Increased organic web traffic by 60% over 3 months through on-page SEO and UI-UX improvements. Created responsive interfaces for 2 educational portals serving 5,000+ users.",
+    },
+    {
+      title: "Volunteer Data Entry Clerk",
+      company: "Al Hadi Center",
+      period: "2023",
+      description:
+        "Provided logistical and emotional support to 150+ individuals during the Turkey earthquake. Digitized 300+ aid request records to streamline support operations.",
+    },
+    {
+      title: "Student Counseling",
+      company: "Freelancer",
+      period: "2021 - 2023",
+      description:
+        "Guided 50+ students in applying to Turkish universities with an 85% success rate. Hosted virtual Q&A sessions reaching over 400 prospective students.",
+    },
+    {
+      title: "Student Assistant",
+      company: "Vakitgroup",
+      period: "2020",
+      description:
+        "Assisted 15+ students with study planning and cultural adaptation. Developed onboarding guides used by future cohorts.",
+    },
+    {
+      title: "Volunteer",
+      company: "Prophet's Mosque, Medina",
+      period: "2014 - 2020",
+      description:
+        "Served 100+ pilgrims with daily assistance, language translation, and food service.",
     },
   ];
 

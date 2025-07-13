@@ -5,10 +5,10 @@ const EducationSection = () => {
     {
       degree: "Bachelor's Degree in Computer Engineering",
       university: "İskenderun Technical University",
-      period: "2020 - 2025 (Expected)",
+      period: "2021 - 2025",
       description:
-        "Studying core subjects in computer science and engineering including algorithms, data structures, OOP, databases, operating systems, and full-stack web development. Honor student with a GPA of 3.37.",
-      pulse: true,
+        "Studying core subjects in computer science and engineering including algorithms, data structures, OOP, databases, operating systems, and full-stack web development. Honor student with a GPA of 3.39.",
+      pulse: false,
     },
     {
       degree: "Turkish Language Preparation",

@@ -49,7 +49,7 @@ const HeroSection = () => {
             style={{ animationDelay: "0.6s" }}
           >
             <a
-              href="https://github.com/MOHAADEV"
+              href="https://github.com/MOHA-dev0"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-full border border-gray-300 hover:border-primary hover:bg-primary/10 transition-colors"

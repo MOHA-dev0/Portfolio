@@ -79,7 +79,7 @@ const ContactSection = () => {
                       <MapPin className="w-5 h-5 opacity-80" />
                       <div>
                         <p className="text-sm opacity-80">Location</p>
-                        <p className="font-medium">Hatay/Gaziantep, Turkey</p>
+                        <p className="font-medium">Istanbul, Turkey</p>
                       </div>
                     </div>
 
@@ -88,12 +88,12 @@ const ContactSection = () => {
                       <div>
                         <p className="text-sm opacity-80">GitHub</p>
                         <a
-                          href="https://github.com/MOHAADEV"
+                          href="https://github.com/MOHA-dev0"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="font-medium hover:underline"
                         >
-                          github.com/MOHAADEV
+                          github.com/MOHA-dev0
                         </a>
                       </div>
                     </div>
